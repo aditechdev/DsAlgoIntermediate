@@ -16,7 +16,6 @@ public class ArmstrongNumber {
         try (Scanner sc = new Scanner(System.in)) {
             int n = sc.nextInt();
 
-
             for(int i = 1; i<= n; i++){
                 int lengthOfn = calculateLength(i);
 
@@ -29,7 +28,15 @@ public class ArmstrongNumber {
             }
         }
     }
-
+    
+    /**
+     * This logic is used to get reverse of number
+     * Which is used to detect armstrong number
+     * If the number is armsstrong it will return false else it will return false
+     * @param n
+     * @param length
+     * @return
+     */
     static boolean checkArmStrong(int n,int length){
         int temp = n;
         int armNumber = 0;
@@ -45,13 +52,17 @@ public class ArmstrongNumber {
             temp = temp/10;
         }
 
-        if(n == armNumber){
-            return true;
-        }
-        return false;
+        
+        return n == armNumber;
 
     }
-
+    
+    /**
+     * Calculate the length of number
+     * @param n is the integer
+     * @return length of the number
+     * 
+     */
     static int calculateLength(int n){
         int temp = n;
         int lengthOfNumber = 0;
