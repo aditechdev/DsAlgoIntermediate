@@ -8,19 +8,20 @@ public class ArmstrongNumber {
 
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            int n = sc.nextInt();
 
 
-        for(int i = 1; i<= n; i++){
-            int lengthOfn = calculateLength(i);
+            for(int i = 1; i<= n; i++){
+                int lengthOfn = calculateLength(i);
 
-            boolean isArmStrong = checkArmStrong(i, lengthOfn);
+                boolean isArmStrong = checkArmStrong(i, lengthOfn);
 
-            if(isArmStrong){
-                System.out.println(i);
+                if(isArmStrong){
+                    System.out.println(i);
+                }
+
             }
-
         }
     }
 
