@@ -1,9 +1,14 @@
 import java.util.Scanner;
-///Find ARMSTRONG number between 1 and given number
-/// ARMSTRONG number is a number such that when each individual
-// digit of the number is raised to the power of the number of digits in the number
-// and then added up, they are equal to the original number itself.
-//example, 153 = ( 1 * 1 * 1 ) + ( 5 * 5 * 5 ) + ( 3 * 3 * 3 ).
+
+/**
+ * Find ARMSTRONG number between 1 and given number
+ * ARMSTRONG number is a number such that when each individual
+<p>
+ digit of the number is raised to the power of the number of digits in the number
+ * <p>and then added up, they are equal to the original number itself.
+ * <p>example, 153 = ( 1 * 1 * 1 ) + ( 5 * 5 * 5 ) + ( 3 * 3 * 3 ).
+ */
+
 public class ArmstrongNumber {
 
 
